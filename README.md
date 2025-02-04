@@ -1,3 +1,3 @@
-<h1>Compilador de gramatica</h1>
+<h1>Trabajos de la Uni</h1>
 
-- Estado del proyecto: En construccion.
+- Estado de los proyectos: En construccion.
