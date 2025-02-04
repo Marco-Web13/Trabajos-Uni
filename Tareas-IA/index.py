@@ -39,15 +39,6 @@ class Arbol:
             self.__inorden(nodo.derecha)
             print(nodo.dato, end=", ")
 
-    def __buscar(self, nodo, busqueda):
-        if nodo is None:
-            return None
-        if nodo.dato == busqueda:
-            return None
-        if busqueda < nodo.dato:
-            return self.__buscar(nodo.izquiera, busqueda)
-        else:
-            return self.__buscar(nodo.derecha, busqueda)
         
     def agregar(self, dato):
         self.__agregar_recursivo(self.raiz, dato)
@@ -63,18 +54,16 @@ class Arbol:
         print("Imprimiendo el Arbol Postorden: ")
         self.__postorden(self.raiz)
         print("")
-    def buscar(self, busqueda):
-        return self.__buscar(self.raiz, busqueda)
+
     
 #from arbol import Arbol;
-arbol = Arbol(6)
-arbol.agregar(1)
-arbol.agregar(2)
-arbol.agregar(13)
-arbol.agregar(7)
-arbol.agregar(5)
+arbol = Arbol(10)
 arbol.agregar(4)
-
+arbol.agregar(2)
+arbol.agregar(5)
+arbol.agregar(11)
+#arbol.agregar("Sebastian Galvan")
+#arbol.buscar(2)
 arbol.inorden()
 arbol.preorden()
 arbol.postorden()
