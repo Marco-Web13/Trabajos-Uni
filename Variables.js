@@ -167,3 +167,24 @@ const dog = {
 }
 console.log(dog)
 dog.ladrar();
+
+
+////////REST y Operador Spread////////
+function operaciones(a, b, ...c) {
+    let Resultado = a + b
+
+    c.forEach(function (n) {
+      Resultado += n;
+    })
+
+    return Resultado;
+}
+console.log(operaciones(1, 2, 3, 4, 20))
+
+const arreglo_1=[1,2,3,4,5];
+const arreglo_2=[6,7,8,9,10];
+
+const arreglo_3 = [arreglo_1, arreglo_2] //Se crea un arreglo con 2 arreglos dentro
+const arreglo_3_1=[...arreglo_1, ...arreglo_2]; //Se agregan los contenidos de los 2 arreglos
+console.log(arreglo_3)
+console.log(arreglo_3_1[9])
