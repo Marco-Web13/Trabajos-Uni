@@ -57,12 +57,12 @@ class Arbol:
 
     
 #from arbol import Arbol;
-arbol = Arbol(10)
-arbol.agregar(4)
-arbol.agregar(2)
-arbol.agregar(5)
-arbol.agregar(11)
+numero = Arbol(10)
+numero.agregar(4)
+numero.agregar(2)
+numero.agregar(5)
+numero.agregar(11)
 
-arbol.inorden()
-arbol.preorden()
-arbol.postorden()
+numero.inorden()
+numero.preorden()
+#arbol.postorden()
