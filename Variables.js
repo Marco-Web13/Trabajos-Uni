@@ -188,3 +188,37 @@ const arreglo_3 = [arreglo_1, arreglo_2] //Se crea un arreglo con 2 arreglos den
 const arreglo_3_1=[...arreglo_1, ...arreglo_2]; //Se agregan los contenidos de los 2 arreglos
 console.log(arreglo_3)
 console.log(arreglo_3_1[9])
+
+//////ARROW FUNCTIONS//////
+//Se crean de la siguiente manera:
+let x, y, sumatoria;
+sumatoria = (y, x) => x+y+10;
+console.log(sumatoria(1,2));
+
+sumatoria = (nombre) => {
+    return ("hola "+nombre)
+}
+
+console.log(sumatoria("Dull spectre"));
+
+/////PROTOTIPOS/////
+//INTRODUCCION A POO:
+/*
+CLASES.-Modelo a seguir
+OBJETOS.-Es una instancia de una clase
+ATRIBUTOS.-Caracteristicas o propiedades de los objetos
+METODOS.-Son acciones que un objeto puede realizar
+*/
+
+//FUNCION CONSTRUCTORA
+function Automovil(marca, sub_marca,modelo) {
+    this.marca = marca;
+    this.sub_marca = sub_marca;
+    this.modelo = modelo;
+    this.sonido = function () {
+        console.log("brrum brruum")
+    }
+}
+
+console.log(new Automovil("Toyota", "Corolla", "2017"));
+console.log(new Automovil("Honda", "Civic", "2025"));
