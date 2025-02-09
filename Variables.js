@@ -222,3 +222,4 @@ function Automovil(marca, sub_marca,modelo) {
 
 console.log(new Automovil("Toyota", "Corolla", "2017"));
 console.log(new Automovil("Honda", "Civic", "2025"));
+//////////////////   
