@@ -222,3 +222,18 @@ function Automovil(marca, sub_marca,modelo) {
 
 console.log(new Automovil("Toyota", "Corolla", "2017"));
 console.log(new Automovil("Honda", "Civic", "2025"));
+
+//Asignar metodos al prototipo y no a la función
+function Automoviles(marca, sub_marca,modelo) {
+    this.marca = marca;
+    this.sub_marca = sub_marca;
+    this.modelo = modelo;
+}
+
+Automoviles.prototype.sonidos = function () {
+    console.log("brrum brruum")
+}
+console.log(new Automoviles("Honda", "Accord", "2015"));
+console.log(new Automoviles("Honda", "Accord", "2015"));
+const Cris= new Automoviles("Honda", "Accord", "2015");
+Cris.sonidos();
