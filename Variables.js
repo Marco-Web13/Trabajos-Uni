@@ -237,3 +237,5 @@ console.log(new Automoviles("Honda", "Accord", "2015"));
 console.log(new Automoviles("Honda", "Accord", "2015"));
 const Cris= new Automoviles("Honda", "Accord", "2015");
 Cris.sonidos();
+
+//HERENCIA EN PROTOTIPOS//
