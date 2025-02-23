@@ -239,3 +239,55 @@ const Cris= new Automoviles("Honda", "Accord", "2015");
 Cris.sonidos();
 
 //HERENCIA EN PROTOTIPOS//
+var i;
+var delay=0;
+var contador=0;
+var finalizar=false
+for(i=0; i<240; i++){
+    
+    if(contador<60 && finalizar===false){
+        contador++;
+        delay+=250;
+
+        if (delay===15000) {
+            console.log("primer ciclo terminado="+delay);
+            finalizar=true;
+            contador=0;
+            delay=0;
+        }
+    }
+    if (finalizar===true && contador<120) {
+        contador++;
+        delay+=250;
+        if(delay===30000){
+            console.log("Ciclo de apagado terminado="+delay);
+            finalizar=false;
+            contador=0;
+            delay=0;
+        }
+    }
+}
+///EJERCICIO DE FUNCIONES//
+function calcularPorcentajes(nombre, respuestasPositivas, respuestasNegativas) {
+    var porcentaje=(respuestasPositivas*100)/100;
+    var Calificacion=""
+    console.log(nombre+" sacó un total de "+respuestasPositivas+"% en su examen")
+    if (respuestasPositivas>=90) {
+        Calificacion="A"
+    }else{
+        if (respuestasPositivas>=70 && respuestasPositivas<=89) {
+            Calificacion="B"
+        }else{
+            if (respuestasPositivas>=45 && respuestasPositivas<=69) {
+                Calificacion="C"
+            }else{
+                if (respuestasPositivas>45) {
+                    Calificacion="D"
+                }
+            }
+        }
+    }
+    console.log("Calificacion: "+Calificacion);
+}
+
+calcularPorcentajes("Marco", 90, 10);
